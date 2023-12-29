@@ -1,0 +1,18 @@
+@hostname=localhost
+@port=7071
+@host={{hostname}}:{{port}}
+# Functions:
+# Function1: [GET,POST] 
+GET http://{{host}}/api/Function1
+###
+POST http://{{host}}/api/Function1
+
+### ProductsDelete: [DELETE] 
+DELETE http://{{host}}/api/products/{productId:int}
+
+### ProductsPost: [POST] 
+
+POST http://{{host}}/api/products
+
+### ProductsPut: [PUT] 
+PUT http://{{host}}/api/products
